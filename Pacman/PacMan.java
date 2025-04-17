@@ -77,16 +77,16 @@ class PacMan extends JPanel implements ActionListener, KeyListener{
         setPreferredSize(new Dimension(boardWidth, boardHeight));
         setBackground(Color.BLACK);
         try {
-            wallImage        = ImageIO.read(new File("src/wall.png"));
-            blueGhostImage   = ImageIO.read(new File("src/blueGhost.png"));
-            redGhostImage    = ImageIO.read(new File("src/redGhost.png"));
-            orangeGhostImage = ImageIO.read(new File("src/orangeGhost.png"));
-            pinkGhostImage   = ImageIO.read(new File("src/pinkGhost.png"));
+            wallImage        = ImageIO.read(new File("photos/wall.png"));
+            blueGhostImage   = ImageIO.read(new File("photos/blueGhost.png"));
+            redGhostImage    = ImageIO.read(new File("photos/redGhost.png"));
+            orangeGhostImage = ImageIO.read(new File("photos/orangeGhost.png"));
+            pinkGhostImage   = ImageIO.read(new File("photos/pinkGhost.png"));
 
-            pacmanUpImage    = ImageIO.read(new File("src/pacmanUp.png"));
-            pacmanDownImage  = ImageIO.read(new File("src/pacmanDown.png"));
-            pacmanLeftImage  = ImageIO.read(new File("src/pacmanLeft.png"));
-            pacmanRightImage = ImageIO.read(new File("src/pacmanRight.png"));
+            pacmanUpImage    = ImageIO.read(new File("photos/pacmanUp.png"));
+            pacmanDownImage  = ImageIO.read(new File("photos/pacmanDown.png"));
+            pacmanLeftImage  = ImageIO.read(new File("photos/pacmanLeft.png"));
+            pacmanRightImage = ImageIO.read(new File("photos/pacmanRight.png"));
         } catch (IOException e) {
             e.printStackTrace();
             JOptionPane.showMessageDialog(this, "Не удалось загрузить картинки!", "Ошибка", JOptionPane.ERROR_MESSAGE);
